@@ -62,10 +62,10 @@ export default function App() {
               3. Stop Babysitting Movers and Start Scaling Your Business.
           */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-6">
-            Your Moving Company Is Running.<br className="hidden md:block" /> You're Just Not Free Yet.
+            Your Moving Company Is Running.<br className="hidden md:block" /> <span className="text-[#E85D26]">You're Just Not Free Yet.</span>
           </h1>
           <p className="text-[#A0A0A0] text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed">
-            You're doing decent revenue, but you can't step away for a weekend without something breaking. It's time to build the remote systems that let you actually own your business, not just work for it.
+            You're doing decent revenue, but you can't step away for a weekend without something breaking. It's time to build the <span className="text-white font-semibold">remote systems</span> that let you actually <span className="text-white font-semibold">own your business</span>, not just work for it.
           </p>
 
           {/* VSL PLACEHOLDER */}
@@ -84,7 +84,7 @@ export default function App() {
             Apply to Work With John
           </PopupButton>
           <p className="text-[#A0A0A0] text-sm font-medium">
-            $2M/yr. Fully Remote. Built from Savannah at 17.
+            $2M/yr. Fully Remote.
           </p>
         </div>
       </section>
