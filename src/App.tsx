@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { Play, Check, ChevronDown, ChevronUp, Star } from 'lucide-react';
-import { PopupButton, Widget } from '@typeform/embed-react';
 
 export default function App() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -47,9 +46,9 @@ export default function App() {
       <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-[#0A0A0A]/90 backdrop-blur-md border-b border-[#2A2A2A] py-4' : 'bg-transparent py-6'}`}>
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
           <div className="text-2xl font-bold tracking-tight">John Frell</div>
-          <PopupButton id="01KN31QXCM130ZVVE7HD3DQKWB" className="bg-[#E85D26] hover:bg-[#f06d39] text-white px-6 py-2.5 rounded-md font-semibold transition-colors text-sm md:text-base cursor-pointer">
+          <button onClick={(e) => e.preventDefault()} className="bg-[#E85D26] hover:bg-[#f06d39] text-white px-6 py-2.5 rounded-md font-semibold transition-colors text-sm md:text-base cursor-pointer">
             Apply for Mentorship
-          </PopupButton>
+          </button>
         </div>
       </nav>
 
@@ -80,9 +79,9 @@ export default function App() {
             </div>
           </div>
 
-          <PopupButton id="01KN31QXCM130ZVVE7HD3DQKWB" className="inline-block bg-[#E85D26] hover:bg-[#f06d39] text-white px-8 py-4 rounded-md font-bold text-lg transition-all hover:shadow-[0_0_20px_rgba(232,93,38,0.4)] mb-4 cursor-pointer">
+          <button onClick={(e) => e.preventDefault()} className="inline-block bg-[#E85D26] hover:bg-[#f06d39] text-white px-8 py-4 rounded-md font-bold text-lg transition-all hover:shadow-[0_0_20px_rgba(232,93,38,0.4)] mb-4 cursor-pointer">
             Apply to Work With John
-          </PopupButton>
+          </button>
           <p className="text-[#A0A0A0] text-sm font-medium">
             $2M/yr. Fully Remote.
           </p>
@@ -208,9 +207,9 @@ export default function App() {
                 <span className="text-sm font-semibold tracking-wide uppercase text-white">5 Spots Open</span>
               </div>
 
-              <PopupButton id="01KN31QXCM130ZVVE7HD3DQKWB" className="block w-full bg-[#E85D26] hover:bg-[#f06d39] text-white text-center py-4 rounded-md font-bold text-lg transition-colors mb-4 cursor-pointer">
+              <button onClick={(e) => e.preventDefault()} className="block w-full bg-[#E85D26] hover:bg-[#f06d39] text-white text-center py-4 rounded-md font-bold text-lg transition-colors mb-4 cursor-pointer">
                 Apply Now — Limited Spots
-              </PopupButton>
+              </button>
               <p className="text-xs text-center text-[#A0A0A0]">
                 Application only. John reviews every app personally.
               </p>
@@ -328,14 +327,14 @@ export default function App() {
       <section className="py-32 px-6" id="apply">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-6xl font-bold tracking-tight mb-8 leading-[1.1]">
-            Your Moving Company Is Already Built.<br className="hidden md:block" /> Now Let's Make It Run Without You.
+            Your Moving Company Is Already Built.<br className="hidden md:block" /> Now Let's Make It <span className="text-[#E85D26]">Run Without You.</span>
           </h2>
           <p className="text-[#A0A0A0] text-xl mb-12 max-w-2xl mx-auto">
             John takes on 5 clients at a time — maximum. When spots fill, the waitlist opens.
           </p>
           
-          <div className="w-full h-[600px] md:h-[700px] rounded-xl overflow-hidden shadow-[0_0_30px_rgba(232,93,38,0.1)] border border-[#2A2A2A] mb-6">
-            <Widget id="01KN31QXCM130ZVVE7HD3DQKWB" className="w-full h-full" />
+          <div className="w-full h-[600px] md:h-[700px] rounded-xl overflow-hidden shadow-[0_0_30px_rgba(232,93,38,0.1)] border border-[#2A2A2A] mb-6 flex items-center justify-center bg-[#141414]">
+            <span className="text-[#A0A0A0] font-medium tracking-wide">[ Add Typeform Here ]</span>
           </div>
           
           <p className="text-[#A0A0A0] text-sm">
