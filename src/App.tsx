@@ -46,9 +46,12 @@ export default function App() {
       <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-[#0A0A0A]/90 backdrop-blur-md border-b border-[#2A2A2A] py-4' : 'bg-transparent py-6'}`}>
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
           <div className="text-2xl font-bold tracking-tight">John Frell</div>
-          <button onClick={(e) => e.preventDefault()} className="bg-[#E85D26] hover:bg-[#f06d39] text-white px-6 py-2.5 rounded-md font-semibold transition-colors text-sm md:text-base cursor-pointer">
-            Apply for Mentorship
-          </button>
+          <div className="relative group">
+            <div className="absolute -inset-1 bg-[#E85D26]/30 rounded-lg blur-md animate-[pulse_4s_ease-in-out_infinite] group-hover:bg-[#E85D26]/50 transition-colors duration-300"></div>
+            <button onClick={(e) => e.preventDefault()} className="relative bg-[#E85D26] hover:bg-[#f06d39] text-white px-6 py-2.5 rounded-md font-semibold transition-colors text-sm md:text-base cursor-pointer">
+              Apply for Mentorship
+            </button>
+          </div>
         </div>
       </nav>
 
@@ -68,20 +71,28 @@ export default function App() {
           </p>
 
           {/* VSL PLACEHOLDER */}
-          <div className="relative w-full max-w-4xl mx-auto aspect-video bg-[#141414] border border-[#2A2A2A] rounded-xl overflow-hidden mb-10 group cursor-pointer flex items-center justify-center">
-            {/* REPLACE WITH REAL VSL VIDEO IFRAME/EMBED */}
-            <div className="absolute inset-0 bg-gradient-to-tr from-[#0A0A0A]/80 to-transparent z-10"></div>
-            <div className="z-20 flex flex-col items-center">
-              <div className="w-20 h-20 bg-[#E85D26] rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-[0_0_30px_rgba(232,93,38,0.3)]">
-                <Play className="w-8 h-8 text-white ml-1" fill="currentColor" />
+          <div className="relative w-full max-w-4xl mx-auto mb-10">
+            {/* Animated Glow Behind VSL */}
+            <div className="absolute -inset-2 md:-inset-4 bg-[#E85D26]/20 rounded-[2rem] blur-2xl md:blur-3xl animate-[pulse_4s_ease-in-out_infinite]"></div>
+            
+            <div className="relative w-full aspect-video bg-[#141414] border border-[#2A2A2A] rounded-xl overflow-hidden group cursor-pointer flex items-center justify-center shadow-[0_0_40px_rgba(232,93,38,0.1)]">
+              {/* REPLACE WITH REAL VSL VIDEO IFRAME/EMBED */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-[#0A0A0A]/80 to-transparent z-10"></div>
+              <div className="z-20 flex flex-col items-center">
+                <div className="w-20 h-20 bg-[#E85D26] rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-[0_0_30px_rgba(232,93,38,0.3)]">
+                  <Play className="w-8 h-8 text-white ml-1" fill="currentColor" />
+                </div>
+                <span className="text-[#A0A0A0] font-medium tracking-wide">[ Add VSL Video Here ]</span>
               </div>
-              <span className="text-[#A0A0A0] font-medium tracking-wide">[ Add VSL Video Here ]</span>
             </div>
           </div>
 
-          <button onClick={(e) => e.preventDefault()} className="inline-block bg-[#E85D26] hover:bg-[#f06d39] text-white px-8 py-4 rounded-md font-bold text-lg transition-all hover:shadow-[0_0_20px_rgba(232,93,38,0.4)] mb-4 cursor-pointer">
-            Apply to Work With John
-          </button>
+          <div className="relative inline-block mb-4 group">
+            <div className="absolute -inset-1.5 bg-[#E85D26]/30 rounded-lg blur-lg animate-[pulse_4s_ease-in-out_infinite] group-hover:bg-[#E85D26]/50 transition-colors duration-300"></div>
+            <button onClick={(e) => e.preventDefault()} className="relative inline-block bg-[#E85D26] hover:bg-[#f06d39] text-white px-8 py-4 rounded-md font-bold text-lg transition-all cursor-pointer">
+              Apply to Work With John
+            </button>
+          </div>
           <p className="text-[#A0A0A0] text-sm font-medium">
             $2M/yr. Fully Remote.
           </p>
@@ -207,9 +218,12 @@ export default function App() {
                 <span className="text-sm font-semibold tracking-wide uppercase text-white">5 Spots Open</span>
               </div>
 
-              <button onClick={(e) => e.preventDefault()} className="block w-full bg-[#E85D26] hover:bg-[#f06d39] text-white text-center py-4 rounded-md font-bold text-lg transition-colors mb-4 cursor-pointer">
-                Apply Now — Limited Spots
-              </button>
+              <div className="relative block w-full mb-4 group">
+                <div className="absolute -inset-1.5 bg-[#E85D26]/30 rounded-lg blur-lg animate-[pulse_4s_ease-in-out_infinite] group-hover:bg-[#E85D26]/50 transition-colors duration-300"></div>
+                <button onClick={(e) => e.preventDefault()} className="relative block w-full bg-[#E85D26] hover:bg-[#f06d39] text-white text-center py-4 rounded-md font-bold text-lg transition-colors cursor-pointer">
+                  Apply Now — Limited Spots
+                </button>
+              </div>
               <p className="text-xs text-center text-[#A0A0A0]">
                 Application only. John reviews every app personally.
               </p>
