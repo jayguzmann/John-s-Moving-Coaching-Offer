@@ -58,6 +58,12 @@ export default function App() {
       {/* 2. HERO SECTION */}
       <section className="pt-32 pb-16 md:pt-40 md:pb-24 px-6">
         <div className="max-w-4xl mx-auto text-center">
+          {/* URGENCY BADGE */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#141414] border border-[#2A2A2A] mb-8 shadow-[0_0_15px_rgba(232,93,38,0.1)]">
+            <div className="w-2 h-2 rounded-full bg-[#E85D26] animate-pulse"></div>
+            <span className="text-sm font-semibold text-[#A0A0A0] uppercase tracking-wider">Only 5 Spots Available</span>
+          </div>
+
           {/* A/B Headlines: 
               1. Your Moving Company Is Running. You're Just Not Free Yet.
               2. You Built a Moving Company. Now It's Time to Actually Own It.
