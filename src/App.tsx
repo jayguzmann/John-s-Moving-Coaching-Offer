@@ -45,7 +45,7 @@ export default function App() {
       {/* 1. NAVIGATION BAR */}
       <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-[#0A0A0A]/90 backdrop-blur-md border-b border-[#2A2A2A] py-4' : 'bg-transparent py-6'}`}>
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-          <div className="text-2xl font-bold tracking-tight">John Frell</div>
+          <div className="text-2xl font-bold tracking-tight">John Farrell</div>
           <div className="relative group">
             <div className="absolute -inset-1 bg-[#E85D26]/30 rounded-lg blur-md animate-[pulse_4s_ease-in-out_infinite] group-hover:bg-[#E85D26]/50 transition-colors duration-300"></div>
             <button onClick={(e) => e.preventDefault()} className="relative bg-[#E85D26] hover:bg-[#f06d39] text-white px-6 py-2.5 rounded-md font-semibold transition-colors text-sm md:text-base cursor-pointer">
@@ -366,10 +366,10 @@ export default function App() {
       {/* 11. FOOTER */}
       <footer className="py-12 px-6 border-t border-[#2A2A2A] bg-[#0A0A0A]">
         <div className="max-w-7xl mx-auto flex flex-col items-center text-center">
-          <div className="text-xl font-bold tracking-tight mb-6">John Frell</div>
+          <div className="text-xl font-bold tracking-tight mb-6">John Farrell</div>
           
           <p className="text-[#A0A0A0] text-sm mb-8">
-            © {new Date().getFullYear()} John Frell. All rights reserved.
+            © {new Date().getFullYear()} John Farrell. All rights reserved.
           </p>
           
           <p className="text-[#555555] text-xs max-w-2xl leading-relaxed">
